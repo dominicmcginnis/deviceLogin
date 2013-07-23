@@ -1,0 +1,183 @@
+/* ============= PAGE LAYOUT modifications: disable left column ============= */
+.phoenix #GridMiddle {
+	padding:0; 	
+}
+.phoenix #GridLeft{
+	width:0; /* width of [Left column] */
+	margin-left:0; /* width of [Left column] */
+}
+.phoenix #GridRight{
+	width:0; /* width of [Right column] */
+	margin-right:0; /* width of [Right column] */
+}
+.phoenix #GridCenterSp {
+	padding:0; /* gutter on left in case there's a Left column */
+}
+/* ============= page-specific styles ============= */
+.signin .fixedwidth{
+	width:782px;
+}
+.signin .container {
+	width: 386px;
+	float: left;
+}
+.signin .checkoutcontainer {
+	width: 300px;
+	float: left;
+}
+.signin .right {
+	float: right;
+}
+.signin .modulebox {
+	min-height: 250px;
+	_height: 250px;
+}
+.signin .forgot {
+	padding: 10px 0;
+}
+.signin .registerinfo {
+	margin: 24px 0 4px;
+}
+.forgotpassword .back {
+	margin-top:23px;
+}
+.forgotpassword .btn {
+	margin-top: -10px;
+}
+.forgotpassword span.pipe {
+	padding: 0 6px 0 8px;
+}
+.forgotpassword button.btn-submit  {
+	float: left;
+}
+.forgotpassword .cancel {
+	line-height:45px;
+}
+.confirmimage{
+	background-position:0px 1px;
+	width:3px;
+	height:23px;
+	float:left;
+}
+.forgotpasswordconfirm .ptop{
+	padding-top:7px;
+}
+.forgotpasswordconfirm .panelpad{
+	padding:7px 0px;
+}
+.forgotpasswordconfirm .topmargin{
+	margin-top:10px;
+}
+.forgotpasswordlinkexpired .panelpad{
+	padding-top:12px;
+}
+.createpassword .labelPadding{
+	padding-left: 10px;
+}
+.createpasswordconfirm .btnContinuePadding{
+	padding-bottom: 5px;
+}
+.createpasswordconfirm .btnContinuePadding,  x:-moz-any-link, x:default {
+	padding-bottom: 35px;
+}
+.createpasswordconfirm .msgPaddingTop{
+	padding-top: 8px;
+	margin-bottom: -2px;
+}
+.createpasswordconfirm .ptop, .forgotpasswordlinkexpired .ptop{
+	margin-top: 10px;
+}
+.createpasswordconfirm .mTop{
+	padding-top:7px;
+}
+.createpasswordconfirm .btnContinueMargin{
+	margin-top: 4px;
+}
+.createpassword .hearderMargin{
+	margin-bottom: -6px;
+}
+.createpassword .signinBtnPadding{
+	margin-top: -8px;
+}
+.createpassword span.pipe{
+	padding: 0 6px 0 6px;
+}
+.createpassword .headerPadding{
+	padding-top: 1px;
+	padding-bottom: 10px;
+}
+.createpassword .cancel {
+	line-height: 45px;
+}
+.createpassword .btn-save{
+	padding-top: 7px;
+}
+.createpassword .btn{
+	padding-top: 1px;
+}
+.phoenix div.errorsMsg{
+	font-weight:normal;
+}
+#forgotPasswordPanel .left {
+	float:left;
+}
+.errorsMsg ul li {
+	margin-left : -18px;
+}
+.phoenix input {
+	max-height:22px;
+}
+
+
+#registerFormWrapper,
+#registerInfoWrapper	{
+	float:left;
+}
+
+#registerFormWrapper	{
+	width: 710px;
+}
+
+#registerInfoWrapper	{
+	width: 230px;
+	margin-left:10px;
+}
+
+#successRegMsgPane h3{
+	top:0;
+}
+
+#accountLockedErrorMessage{
+	margin-top: 10px;
+	padding:0;
+}
+
+.userdeactivated .accountLockedContent {
+	padding-top: 7px;
+	padding-bottom:4px;
+	padding-left:6px;
+}
+
+.userdeactivated .accountLockedContent .ud_icon_left {
+	float:left;
+}
+
+.userdeactivated .accountLockedContent .ud_content_right {
+	margin-left:30px;
+}
+
+.userdeactivated .callus {
+	 color: #FF0000;
+	 font-size:16px;
+	 font-weight:bold;
+	 margin-top:0;
+	 margin-bottom:10px;
+}
+
+.userdeactivated p {
+	 margin-bottom:10px;
+	 margin:0;
+}
+.priceAlertMsg{
+	margin:0 15px 15px 2px;	
+}	

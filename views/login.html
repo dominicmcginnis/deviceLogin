@@ -1,0 +1,197 @@
+<html lang="en-US" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta content="text/html; charset=us-ascii" http-equiv="Content-Type" />
+
+  <title>Sign In</title>
+  <link href="../public/css/stubhub-ecomm_13_7.css" rel="stylesheet" type="text/css" />
+  <link href="../public/css/phoenix-rb1219.css" rel="stylesheet" type="text/css" />
+  <link href="../public/css/signin-rb1207.css" rel="stylesheet" type="text/css" />  
+  <style type="text/css">
+  #headercontainerbig {clear:both;margin-bottom:10px;margin-top:10px;}#headercontainer {/*height:40px;*/clear:both;}#headerlogo {width:128px;height:66px;float:left;}#headermenu {height:40px;float:right;font-size:11px;display:inline;list-style: none;}ul#headermenu li {display:inline;margin: 0;padding: 0.2em;}ul#headermenu li a {text-decoration:none;}ul#headermenu li a:hover, ul#headermenu li a:active {        color: #FF9900;}#headergraphicarea {height:69px;width:760px;background-position:center right;clear:both;}.greetingrow {border-left:1px solid #6699CC;border-right:1px solid #6699CC;border-top:1px solid #6699CC;border-bottom:1px solid #6699CC;height:24px;text-align:center;}h1#replacediv {padding:0px 0 0;}#phone_number {float:right;font-size:13px;color:#444444;padding-top:35px;}.hiddenidentifier{display:none;}
+  </style>
+  <link rel="stylesheet" type="text/css" href="../public/css/stubhub.css" />
+  <script src="../public/js/jquery.bundle.201111261850.min.js" type="text/javascript"></script>
+  <script src="../public/js/stubhub-rb_ecomm_13_5.js" type="text/javascript"></script>  
+  <script language="javascript" src="../public/js/signin-1.0.js" type="text/javascript"></script>  
+</head>
+
+<body class="phoenix signin" id="GridBody">
+  <div id="GridWrapper">
+    <div id="GridTop">
+      <div>
+        <div id="headercontainerbig">
+          <!-- end GridTop -->
+        </div>
+
+        <div class="setFormattingContext" id="GridMiddle">
+          <div id="GridCenter">
+            <div id="GridCenterSp">
+              <!-- ================= PARAMETERS ================= -->
+              <!-- define the contents of the layout sections: -->
+              <!-- ================= MAIN CONTENT ================= -->
+
+              <h1>Sign in</h1>
+
+              <div class="fixedwidth">
+                <div class="container">
+                  <div class="p-source p-offscreenOnLoad" id="login">
+                    <h2 class="topPosition">Already registered?</h2>
+
+                    <div class="p-inside-wrapper">
+                      <form action="/login/signin.signinform" id="signinForm" method=
+                      "post" name="signinForm" type="form">
+                        <div class="t-invisible">
+                          <input name="t:formdata" type="hidden" value=
+                          "H4sIAAAAAAAAAFvzloEVAN3OqfcEAAAA" />
+                        </div>
+
+                        <div class="errorsMsg offscreenOnLoad hidden" id=
+                        "fieldErrorsMsg">
+                          Please provide the correct information in the highlighted
+                          fields.
+                        </div>
+                        <!-- <t:sh.common.LoginComponent loginModel="loginModel" forgotPasswordUrl="forgotPasswordUrl"/> -->
+                      </form>
+
+                      <div>
+                        <form action="/login/signin.logincomponent_0.signinform" id=
+                        "signinForm_0" method="post" name="signinForm_0">
+                          <div class="t-invisible">
+                            <input name="t:formdata" type="hidden" value=
+                            "H4sIAAAAAAAAAJWRvUoDQRRGrwGbBJuALyAJdhML02iVQqsogcVa7s7ejCPz570TNzY+ik8gvkQKO9/BB7C1SqFZTBvW9sDhfPC9fsF+PYCjwppgw5mLxgYdfYqBQr49UQ0gj9YJwziyUZhQ35HKmEgyP42VjkzOlqpEITUpfyHqfGnJVYOC8iINb1a9z8P3dQf2ptDTMWSO7ho9ZehP7/ERRw6DGRWZbTDny5Sh21QvNtXW2yb/3TbjqEmkWJTeitgYVm/V6fz75aMDsEz1MQx3dhOK1JEreYBngAwHDZ390db6xt55AJMnXxJ72pa6W3RF7cSm8QPEho0q6QEAAA==" />
+                          </div>
+
+                          <div class="errorsMsg offscreenOnLoad hidden" id=
+                          "fieldErrorsMsg">
+                            Please provide the correct information in the highlighted
+                            fields.
+                          </div>
+
+                          <fieldset>
+                            <legend>Sign in</legend>
+
+                            <div class="input clear">
+                              <label for="loginEmail">Email</label><input id="loginEmail"
+                              name="loginEmail" type="text" />
+                            </div>
+
+                            <div class="input">
+                              <label for=
+                              "loginPassword">Password</label><input autocomplete="off"
+                              id="loginPassword" name="loginPassword" type="password"
+                              value="" /><br />
+                            </div><!-- Only show Autologin stuff for STH login flow -->
+
+                            <div class="input">
+                              <input class="inline box" id="rememberMe" name="rememberMe"
+                              type="checkbox" /><label class="inline xsmall" for=
+                              "rememberMe">Remember me on this computer</label>
+                            </div>
+
+                            <div class="buttonBar clear">
+                              <button class="btn-signin orange" name="signIn" type=
+                              "submit" value="signIn"><span>Sign in</span></button>
+                            </div>
+
+                            <div class="clear">
+                              <a class="linkButton" href=
+                              "forgotPassword.html">
+                              Forget your password?</a>
+                            </div>
+                          </fieldset>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="container right">
+                  <div class="p-source p-offscreenOnLoad" id="register">
+                    <h2 class="topPosition">New?</h2>
+
+                    <div class="p-inside-wrapper">
+                      <div class="registerinfo">
+                        <div class="subtitle1">
+                          Set up an account - it's free and easy!
+                        </div>
+                      </div>
+
+                      <form action="/login/signin.registerform" id="registerForm" method=
+                      "post" name="registerForm" type="form">
+                        <div class="t-invisible">
+                          <input name="t:formdata" type="hidden" value=
+                          "H4sIAAAAAAAAAFvzloEVAN3OqfcEAAAA" />
+                        </div>
+
+                        <div class="btn">
+						<a href="regsiter.html"><button class="btn-register blue"
+                          id="register" onclick=
+                          "location.href='register.html';"
+                          type="button" value="register"><a href=
+                          "/register.html"><span>Register</span></a></button></a>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="clear"></div><!-- end GridCenterSp -->
+              </div>
+            </div>
+
+            <div id="GridLeft">
+              <!-- empty --><!-- end GridLeft -->
+            </div>
+
+            <div id="GridRight">
+              <!-- empty --><!-- end GridRight -->
+            </div><!-- end GridMiddle -->
+          </div>
+          <div>
+            <script type="text/javascript">
+            /*
+            (function($) {
+            $(function() {
+            if (!$.stubhub.defaultValidation.loginRules) {
+            $.stubhub.defaultValidation.loginRules = {
+            loginEmail: {
+            required:true
+            },
+            loginPassword: {
+            required:true,
+            minlength: 6,
+            maxlength: 20
+            }
+            };
+            }
+            if (!$.stubhub.defaultValidation.loginMessages) {
+            $.stubhub.defaultValidation.loginMessages = {
+            loginEmail: {
+            required: 'Enter a valid email address'
+            },
+            loginPassword: {
+            required: 'Enter a valid password',
+            minlength: 'Enter a valid password',
+            maxlength: 'Enter a valid password'
+            }
+            };
+            }
+            });
+            })(jQuery);
+            */
+            </script>
+          </div>
+          <script type="text/javascript">
+          (function($) {
+          $(function() {
+          initSignin();
+          $("#fieldErrorsMsg").removeClass("offscreenOnLoad").addClass("t-invisible");
+          });
+          })(jQuery);
+          </script>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

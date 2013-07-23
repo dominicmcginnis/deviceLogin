@@ -1,0 +1,939 @@
+<html lang="en-US" xmlns:sh="http://www.stubhub.com/NS/wp" xmlns=
+"http://www.w3.org/1999/xhtml">
+<head>
+  <meta content="text/html; charset=us-ascii" http-equiv="Content-Type" />
+
+  <title>Tickets - Register</title><!-- srcId: Register -->
+  <link href="../public/css/phoenix-rb1219.css" rel="stylesheet" type="text/css" />
+  <link href="../public/css/stubhub-ecomm_13_7.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" type="text/css" href="../public/css/stubhub.css" />
+  <link href="../public/css/signin-rb_ecomm_13_5.css" rel="stylesheet" type="text/css" />
+
+  <script src="../public/js/jquery.bundle.201111261850.min.js" type="text/javascript"></script>
+  <script src="../public/js/stubhub-rb_ecomm_13_5.js" type="text/javascript"></script>  
+  <script src="../public/js/signin-rb1218.js" type="text/javascript"></script>
+  <script src="../public/js/pass-validate-rb_ecomm_13_5.js" type="text/javascript"></script>
+  <!-- link type="text/css" rel="stylesheet" href="${domainProcess.StaticDomainUrlWithRequestProtocol}/resources/mojito/css/common/stubhub.bundle.${domainProcess.StubhubBundleCssTimestamp}.min.css"/ --><!-- the "noscript" css will be removed by javascript --><!-- link id="noscriptCssLink" type="text/css" rel="stylesheet" href="${domainProcess.StaticDomainUrlWithRequestProtocol}/resources/mojito/css/common/noscript-rb1203.css"/ -->
+  <style type="text/css">
+/*<![CDATA[*/
+  #headercontainerbig {clear:both;margin-bottom:10px;margin-top:10px;}#headercontainer {/*height:40px;*/clear:both;}#headerlogo {width:128px;height:66px;float:left;}#headermenu {height:40px;float:right;font-size:11px;display:inline;list-style: none;}ul#headermenu li {display:inline;margin: 0;padding: 0.2em;}ul#headermenu li a {text-decoration:none;}ul#headermenu li a:hover, ul#headermenu li a:active {    color: #FF9900;}#headergraphicarea {height:69px;width:760px;background-position:center right;clear:both;}.greetingrow {border-left:1px solid #6699CC;border-right:1px solid #6699CC;border-top:1px solid #6699CC;border-bottom:1px solid #6699CC;height:24px;text-align:center;}h1#replacediv {padding:0px 0 0;}#phone_number {float:right;font-size:13px;color:#444444;padding-top:35px;}.hiddenidentifier{display:none;}
+  /*]]>*/
+  </style>
+  <style type="text/css">
+  form select.uniformWidthSelect, form select.uniformWidthSelect option {
+  width: 170px;
+  }
+  #btnOk.btn-ok {
+  position: relative;
+  display:inline;
+  float:right;
+  }
+  </style>
+  <style type="text/css">
+  /* Main */ #helpwrapper {width:585px;} #helpBreadcrumb {margin:0px 0px 10px 5px;} .helpWarning {color:#d32d2a; font-weight:bold;}.head-bld-txt {font-size: 14px;font-weight: bold;}
+  </style>
+  <style type="text/css">
+  /* Main */
+  #helpwrapper {width:585px;}
+  #helpBreadcrumb {margin:0px 0px 10px 5px;}
+  .helpWarning {color:#d32d2a; font-weight:bold;}
+
+  .usrAgrmnt-Top .panel {
+    border-radius: 5px 5px 5px 5px;
+  }
+  .usrAgrmnt-Top .panel {
+    border: 1px solid #CCCCCC;
+    padding: 0 10px 10px;
+  }
+  #usrAgrmnt-Top-Pannel{
+        font:12px arial;
+        color:#222222;
+        width:440px;
+        line-height: 15px;
+  }
+  #usrAgrmnt-Top-Pannel p{
+        margin:0;
+        padding:0;
+        line-height: 15px;
+  }
+  .usrAgrmnt-Top * a, .usrAgrmnt-Top * a:link, .usrAgrmnt-Top * a:visited {
+    text-decoration: none;
+  }
+  .usrAgrmnt-Top a{
+        color: #2075c2;
+        text-decoration: none;
+  }
+  .list-alp-module{
+        width:410px;
+        margin-left:30px;
+        float:30px;
+  }
+  .list-txt-alp{
+        margin-bottom:20px;
+        float:left;
+  }
+  .list-pad{
+        float:left;
+        width:50px;
+  }
+  .list-txt{
+        width:360px;
+        float:left;
+  }
+  .brd-bg-div{
+        background-color: #E3EFFB;
+    border: 1px solid #999999;
+    padding: 10px;
+  }
+  .usrAgrmnt-Rgt h3 {
+        margin: 0 0 5px;
+        padding: 0 2px;
+        color: #444444;
+  }
+  .usrAgrmnt-Rgt ul{
+        line-height:18px;
+        width:135px;
+        margin: 0;
+        padding: 0;
+  }
+  </style>
+  <style type="text/css">
+  form select.uniformWidthSelect, form select.uniformWidthSelect option {
+  width: 170px;
+  }
+  #btnOk.btn-ok {
+  position: relative;
+  display:inline;
+  float:right;
+  }
+  </style>
+</head>
+
+<body class="phoenix register" id="GridBody">
+  <div id="GridWrapper">
+
+    <div class="setFormattingContext" id="GridMiddle">
+      <div id="GridCenter">
+        <div id="GridCenterSp">
+          <!-- ================= PARAMETERS ================= -->
+          <!-- define the contents of the layout sections: -->
+          <!-- ================= MAIN CONTENT ================= -->
+
+          <h1>Create your account</h1>
+
+          <div class="p-offscreenOnLoad" id="registerFormWrapper">
+            <form action="/login/register.registerform" id="registerForm" method="post"
+            name="registerForm">
+              <div class="t-invisible">
+                <input name="t:ac" type="hidden" value=
+                "me7Wgr6SEOkiM5tHPF3HO0FlAthBl7Js" /><input name="t:formdata" type=
+                "hidden" value=
+                "H4sIAAAAAAAAAKWWzW4TMRDHh4pAIaUHJLhDk37CthQioXIKqEhIFapIe66c3UniatdebKdJOPAoPAHiJXrgxjvwAFw5ccBrx5s0h60NN/uf+c/PH7PjfP0FtdEObH3APpUKxYGYDmKe5ZwhU2d7EWaEpiRJBEopBbS46EckJ/EAI0VylEpMWlHMBaa0G3WJxKjd1SKJ1VuKadLooBrmzdPL+s8H3/8swY0jqMecKcHT9yRDBfePzskF2U0J6+92lKCs/2qcK1gx3Lblhi6yHbrIY8Fjbe0MuxmVknJ2+S150fv95ccSwDgfteB5Jf6CpDQhSvuuLOQjfAZQ8HD28+H8pv4ta5G0NtqAZqU3JxrAReLWsOwEb6flbMFGZbTARdJdgceO5e+2tE1Yr4zvUSEV02XjYHeMUhSSv9fvAFNylbRcCAbk67ScbdisjC7GhE3mUfWpZmgBfr+NTcvoWbkxJ3g7gzj7i5x9b6flrMGj6gOgauIYN4uJl8PmbsJaZaTEFGNV3otURGHHaJ5WvxoY0CRB1is6kWPVDCvEaVHXNUqTVuFYdfnYsVaMeKLF13wclMEy16FR6fhE85gnZXnf1vM3eu7r8ys3e95neyUl5kP9yky8jRbTgMfV3XGgR+UlmZmfx6Z/CjvXh+qzRVY8Qo6zauRDJwdm8avBc06ZwBHRjbys9zktxG+BB/Cy0pDpPwEDe/ilvPjBmZjpB/cf+fyeMn2TMkWl1fIpm0kB7qB6LdvwrQEScSq9fZbyBLYro4cSBekLxEzPHepeobadGpbDDzvXlmZf5KrpHO9YPlQnkxzDkhjuX3dymMqwCgAA" />
+              </div><input name="goto" type="hidden" value=
+              "me7Wgr6SEOkiM5tHPF3HO0FlAthBl7Js" />
+
+              <div class="errorsMsg offscreenOnLoad hidden" id="fieldErrorsMsg">
+                Please provide the correct information in the highlighted fields.
+              </div>
+
+              <fieldset>
+                <div id="RegisterFormPane">
+                  <div class="inputGroup">
+                    <div class="input clearFloat">
+                      <label for="emailAddress">Email</label><input id="emailAddress"
+                      maxlength="100" name="emailAddress" size="4" type="text" />
+                    </div>
+
+                    <div class="input clearFloat">
+                      <label for="validationEmailAddress">Re-enter
+                      email</label><input id="validationEmailAddress" maxlength="100"
+                      name="validationEmailAddress" size="4" type="text" />
+                    </div>
+                  </div>
+
+                  <div class="inputGroup withTooltip">
+                    <div class="input clearFloat">
+                      <label for="password">Password</label>
+
+                      <div class="pswField">
+                        <div class="pswInput">
+                          <input id="password" maxlength="20" name="password" type=
+                          "password" value="" />
+
+                          <div class="clear"></div>
+                        </div>
+
+                        <div class="pswStrength">
+                          <span class="optional">Password strength</span>
+                          <span class="strength"></span>
+                        </div>
+
+                        <div class="tooltip">
+                          <p><strong>Your password must contain:</strong></p>
+
+                          <ul>
+                            <li>8 to 20 characters</li>
+
+                            <li>A combination of numbers, letters (upper or lower case),
+                            and/or special characters</li>
+                          </ul>
+
+                          <p>You cannot use your email address for your password.</p>
+                        </div>
+
+                        <div class="clear"></div>
+                      </div>
+                    </div>
+
+                    <div class="input clearFloat">
+                      <label for="rePassword">Re-enter password</label><input id=
+                      "rePassword" name="rePassword" size="4" type="password" value="" />
+                    </div>
+                  </div>
+
+                  <div class="hr"></div>
+
+                  <div class="inputGroup">
+                    <div class="input">
+                      <label for="firstName">First name</label><input id="firstName"
+                      maxlength="50" name="firstName" size="4" type="text" />
+                    </div>
+
+                    <div class="input">
+                      <label for="lastName">Last name</label><input id="lastName"
+                      maxlength="50" name="lastName" size="4" type="text" />
+                    </div>
+                  </div>
+
+                  <div class="input clear">
+                    <label for="companyName">Company
+                    <span>&nbsp;(optional)</span></label><input id="companyName"
+                    maxlength="60" name="companyName" type="text" />
+                  </div>
+
+                  <div class="inputGroup">
+                    <div class="input">
+                      <label for="address1">Address 1</label><input id="address1"
+                      maxlength="30" name="address1" size="4" type="text" />
+                    </div>
+
+                    <div class="input">
+                      <label for="address2">Address
+                      2&nbsp;<span>(optional)</span></label><input id="address2"
+                      maxlength="30" name="address2" size="4" type="text" />
+                    </div>
+                  </div>
+
+                  <div class="inputGroup">
+                    <div class="input">
+                      <label for="city">City</label><input id="city" maxlength="100"
+                      name="city" size="4" type="text" />
+                    </div>
+
+                    <div class="input" id="stateDropDownDiv">
+                      <label for="stateSelect">State / Province</label><select class=
+                      "uniformWidthSelect" id="stateSelect" name="stateSelect">
+                        <option value="">
+                          Select
+                        </option>
+
+                        <option value="AL">
+                          Alabama
+                        </option>
+
+                        <option value="AK">
+                          Alaska
+                        </option>
+
+                        <option value="AZ">
+                          Arizona
+                        </option>
+
+                        <option value="AR">
+                          Arkansas
+                        </option>
+
+                        <option value="CA">
+                          California
+                        </option>
+
+                        <option value="CO">
+                          Colorado
+                        </option>
+
+                        <option value="CT">
+                          Connecticut
+                        </option>
+
+                        <option value="DE">
+                          Delaware
+                        </option>
+
+                        <option value="DC">
+                          District of Columbia
+                        </option>
+
+                        <option value="FL">
+                          Florida
+                        </option>
+
+                        <option value="GA">
+                          Georgia
+                        </option>
+
+                        <option value="HI">
+                          Hawaii
+                        </option>
+
+                        <option value="ID">
+                          Idaho
+                        </option>
+
+                        <option value="IL">
+                          Illinois
+                        </option>
+
+                        <option value="IN">
+                          Indiana
+                        </option>
+
+                        <option value="IA">
+                          Iowa
+                        </option>
+
+                        <option value="KS">
+                          Kansas
+                        </option>
+
+                        <option value="KY">
+                          Kentucky
+                        </option>
+
+                        <option value="LA">
+                          Louisiana
+                        </option>
+
+                        <option value="ME">
+                          Maine
+                        </option>
+
+                        <option value="MD">
+                          Maryland
+                        </option>
+
+                        <option value="MA">
+                          Massachusetts
+                        </option>
+
+                        <option value="MI">
+                          Michigan
+                        </option>
+
+                        <option value="MN">
+                          Minnesota
+                        </option>
+
+                        <option value="MS">
+                          Mississippi
+                        </option>
+
+                        <option value="MO">
+                          Missouri
+                        </option>
+
+                        <option value="MT">
+                          Montana
+                        </option>
+
+                        <option value="NE">
+                          Nebraska
+                        </option>
+
+                        <option value="NV">
+                          Nevada
+                        </option>
+
+                        <option value="NH">
+                          New Hampshire
+                        </option>
+
+                        <option value="NJ">
+                          New Jersey
+                        </option>
+
+                        <option value="NM">
+                          New Mexico
+                        </option>
+
+                        <option value="NY">
+                          New York
+                        </option>
+
+                        <option value="NC">
+                          North Carolina
+                        </option>
+
+                        <option value="ND">
+                          North Dakota
+                        </option>
+
+                        <option value="OH">
+                          Ohio
+                        </option>
+
+                        <option value="OK">
+                          Oklahoma
+                        </option>
+
+                        <option value="OR">
+                          Oregon
+                        </option>
+
+                        <option value="PA">
+                          Pennsylvania
+                        </option>
+
+                        <option value="PR">
+                          Puerto Rico
+                        </option>
+
+                        <option value="RI">
+                          Rhode Island
+                        </option>
+
+                        <option value="SC">
+                          South Carolina
+                        </option>
+
+                        <option value="SD">
+                          South Dakota
+                        </option>
+
+                        <option value="TN">
+                          Tennessee
+                        </option>
+
+                        <option value="TX">
+                          Texas
+                        </option>
+
+                        <option value="UT">
+                          Utah
+                        </option>
+
+                        <option value="VT">
+                          Vermont
+                        </option>
+
+                        <option value="VA">
+                          Virginia
+                        </option>
+
+                        <option value="WA">
+                          Washington
+                        </option>
+
+                        <option value="WV">
+                          West Virginia
+                        </option>
+
+                        <option value="WI">
+                          Wisconsin
+                        </option>
+
+                        <option value="WY">
+                          Wyoming
+                        </option>
+                      </select><input id="state" name="state" type="hidden" />
+                    </div>
+
+                    <div class="hidden" id="stateInputDiv">
+                      <label for="stateTextBox">State / Province</label><input id=
+                      "stateTextBox" maxlength="100" name="stateTextBox" size="4" type=
+                      "text" />
+                    </div>
+                  </div>
+
+                  <div class="inputGroup">
+                    <div class="input" style="width:205px;">
+                      <label for="zipCode">ZIP / Postal code</label><input id="zipCode"
+                      name="zipCode" size="4" type="text" />
+                    </div>
+
+                    <div class="input">
+                      <label for="country">Country</label><select class=
+                      "uniformWidthSelect" id="country" name="country" width="200">
+                        <option value="">
+                          Select
+                        </option>
+
+                        <option value="AD">
+                          Andorra
+                        </option>
+
+                        <option value="AR">
+                          Argentina
+                        </option>
+
+                        <option value="AU">
+                          Australia
+                        </option>
+
+                        <option value="AT">
+                          Austria
+                        </option>
+
+                        <option value="BS">
+                          Bahamas
+                        </option>
+
+                        <option value="BE">
+                          Belgium
+                        </option>
+
+                        <option value="BM">
+                          Bermuda
+                        </option>
+
+                        <option value="BR">
+                          Brazil
+                        </option>
+
+                        <option value="CA">
+                          Canada
+                        </option>
+
+                        <option value="CL">
+                          Chile
+                        </option>
+
+                        <option value="CN">
+                          China
+                        </option>
+
+                        <option value="CO">
+                          Colombia
+                        </option>
+
+                        <option value="CR">
+                          Costa Rica
+                        </option>
+
+                        <option value="CZ">
+                          Czech Republic
+                        </option>
+
+                        <option value="DK">
+                          Denmark
+                        </option>
+
+                        <option value="DO">
+                          Dominican Republic
+                        </option>
+
+                        <option value="EG">
+                          Egypt
+                        </option>
+
+                        <option value="FI">
+                          Finland
+                        </option>
+
+                        <option value="FR">
+                          France
+                        </option>
+
+                        <option value="DE">
+                          Germany
+                        </option>
+
+                        <option value="GR">
+                          Greece
+                        </option>
+
+                        <option value="GT">
+                          Guatemala
+                        </option>
+
+                        <option value="GG">
+                          Guernsey
+                        </option>
+
+                        <option value="HK">
+                          Hong Kong
+                        </option>
+
+                        <option value="IN">
+                          India
+                        </option>
+
+                        <option value="IE">
+                          Ireland
+                        </option>
+
+                        <option value="IL">
+                          Israel
+                        </option>
+
+                        <option value="IT">
+                          Italy
+                        </option>
+
+                        <option value="JP">
+                          Japan
+                        </option>
+
+                        <option value="JE">
+                          Jersey
+                        </option>
+
+                        <option value="KW">
+                          Kuwait
+                        </option>
+
+                        <option value="LI">
+                          Liechtenstein
+                        </option>
+
+                        <option value="LU">
+                          Luxembourg
+                        </option>
+
+                        <option value="MY">
+                          Malaysia
+                        </option>
+
+                        <option value="MX">
+                          Mexico
+                        </option>
+
+                        <option value="MC">
+                          Monaco
+                        </option>
+
+                        <option value="NL">
+                          Netherlands
+                        </option>
+
+                        <option value="NZ">
+                          New Zealand
+                        </option>
+
+                        <option value="NO">
+                          Norway
+                        </option>
+
+                        <option value="PA">
+                          Panama
+                        </option>
+
+                        <option value="PE">
+                          Peru
+                        </option>
+
+                        <option value="PH">
+                          Philippines
+                        </option>
+
+                        <option value="PL">
+                          Poland
+                        </option>
+
+                        <option value="PT">
+                          Portugal
+                        </option>
+
+                        <option value="SM">
+                          San Marino
+                        </option>
+
+                        <option value="SA">
+                          Saudi Arabia
+                        </option>
+
+                        <option value="SG">
+                          Singapore
+                        </option>
+
+                        <option value="ZA">
+                          South Africa
+                        </option>
+
+                        <option value="KR">
+                          South Korea
+                        </option>
+
+                        <option value="ES">
+                          Spain
+                        </option>
+
+                        <option value="SE">
+                          Sweden
+                        </option>
+
+                        <option value="CH">
+                          Switzerland
+                        </option>
+
+                        <option value="TW">
+                          Taiwan
+                        </option>
+
+                        <option value="TH">
+                          Thailand
+                        </option>
+
+                        <option value="TR">
+                          Turkey
+                        </option>
+
+                        <option value="AE">
+                          United Arab Emirates
+                        </option>
+
+                        <option value="GB">
+                          United Kingdom
+                        </option>
+
+                        <option selected="selected" value="US">
+                          United States
+                        </option>
+
+                        <option value="VA">
+                          Vatican City
+                        </option>
+
+                        <option value="VE">
+                          Venezuela
+                        </option>
+                      </select>
+                    </div>
+                  </div>
+
+                  <div class="inputGroup">
+                    <div class="input">
+                      <label for="phone">Phone <span class="optional">(mobile
+                      preferred)</span></label><input class="narrow" id="phone"
+                      maxlength="50" name="phone" size="4" type="text" />
+                    </div>
+
+                    <div class="input">
+                      <label for="phone">Ext.
+                      <span>(optional)</span></label><input class="xxnarrow" id=
+                      "phoneExtension" maxlength="50" name="phoneExtension" size="4"
+                      type="text" />
+                    </div>
+                  </div>
+                </div>
+
+                <div class="clear">
+                  <button class="btn-submit-lrg disabled-lrg" disabled="disabled" id=
+                  "registerSubmit" name="register" type="submit" value=
+                  "submit"><span>Submit</span></button>
+                </div>
+              </fieldset>
+            </form>
+          </div>
+
+          <div class="p-offscreenOnLoad" id="registerInfoWrapper">
+            <div id="alreadyRegisteredBox">
+              <h3>Already registered?</h3><a href=
+              "login.html">Sign in</a> to your
+              account.
+            </div>
+          </div><!-- Hidden content -->
+        </div>
+      </div>
+
+      <div id="GridLeft">
+        <!-- empty --><!-- end GridLeft -->
+      </div>
+
+      <div id="GridRight">
+        <!-- empty --><!-- end GridRight -->
+      </div><!-- end GridMiddle -->
+    </div>
+<script type="text/javascript">
+    var firstNameMessage = 'Enter a first name';
+    var validFirstNameMessage = 'Enter a valid first name';
+    var lastNameMessage = 'Enter a last name';
+    var validLastNameMessage = 'Enter a valid last name';
+    var streetAddressMessage = 'Enter a street address';
+    var cityMessage = 'Enter a city';
+    var stateMessage = 'Select a state / province';
+    var enterStateMessage = 'Enter a state';
+    var zipMessage = 'Enter a ZIP/Postal code';
+    var countryMessage = 'Select a country';
+    var phoneMessage = 'Enter a valid phone number';
+    var extensionMessage = 'Enter a valid phone extension';
+    var emailMessage = 'Enter a valid email address';
+    var matchingEmailMessage = 'Enter matching email addresses';
+    var passwordMessage ='Enter a valid password';
+    var repasswordMessage ='Enter a valid, matching password';
+    var userAgmtMessage ='Please accept our User Agreement and Privacy Policy';
+    (function($) {
+    attachHelpOverlay('#registerFormWrapper #jrLink',390,'#jrOverlay');
+    attachHelpOverlay('#registerFormWrapper #ppLink',500,'#ppContent');
+    attachHelpOverlay('#registerFormWrapper #uaLink',500,'#uaContent');
+    //attachHelpOverlay('#GridCenterSp #outsideLink',430,'#outsideContent');
+    $('#outsideLink').overlay({align:'relative',width:430});
+    function attachHelpOverlay(selector, wd, src) {
+    $(selector).live('click', function() {
+    $(this).overlay({align:'relative',width:wd,trigger:"load",source:src});
+    return false;
+    });
+    }
+    $('#cbtpopup').overlay({
+    align:'centered',
+    modal: true,
+    width: 430,
+    closeOnClickOutside:true,
+    showCloseIcon: true,
+    source:'/help/services/popUp?nodeDesc=CBT-overlay-message'
+    });
+    $(function() {
+    if (!$.stubhub.defaultValidation.registerRules) {
+    $.stubhub.defaultValidation.registerRules = {
+    emailAddress: {
+    required:true,
+    emailStub:true,
+    equalTo: '#validationEmailAddress'
+    },
+    validationEmailAddress: {
+    required:true,
+    emailStub:true,
+    equalTo: '#emailAddress'
+    },
+    password: {
+    passwordValidation: true
+    },
+    rePassword: {
+    equalTo: '#password'
+    },
+    firstName: {
+    required: true,
+    maxlength: 50,
+    validFirstNameChars: true
+    },
+    lastName: {
+    required: true,
+    maxlength: 50,
+    validLastNameChars: true
+    },
+    address1: {
+    'required' : true
+    },
+    city: 'required',
+    stateSelect: {
+    selectState: true
+    },
+    stateTextBox: {
+    enterState: true
+    },
+    zipCode: {
+    required: true
+    },
+    country: 'required',
+    phone: {
+    required: true,
+    maxlength: 16,
+    charDigits: true
+    },
+    userAgreement: 'required'
+    };
+    }
+    if (!$.stubhub.defaultValidation.registerMessages) {
+    $.stubhub.defaultValidation.registerMessages = {
+    emailAddress: {
+    required: emailMessage,
+    emailStub: emailMessage,
+    equalTo: matchingEmailMessage
+    },
+    validationEmailAddress: {
+    required: emailMessage,
+    emailStub: emailMessage,
+    equalTo: matchingEmailMessage
+    },
+    password: {
+    passwordValidation: passwordMessage
+    },
+    rePassword: {
+    equalTo: repasswordMessage
+    },
+    firstName: {
+    required: firstNameMessage,
+    maxlength: validFirstNameMessage
+    },
+    lastName: {
+    required: lastNameMessage,
+    maxlength: validLastNameMessage
+    },
+    address1: {
+    streetAddressMessage : true
+    },
+    city: cityMessage,
+    stateSelect: {
+    selectState: stateMessage
+    },
+    stateTextBox: {
+    enterState: enterStateMessage
+    },
+    zipCode: {
+    required: zipMessage
+    } ,
+    country: countryMessage,
+    phone: {
+    required: phoneMessage,
+    maxlength: phoneMessage,
+    charDigits: phoneMessage
+    },
+    userAgreement: userAgmtMessage
+    };
+    }
+    /* Method for special characters and digits: This allows spaces, -, () as a valid input */
+    jQuery.validator.addMethod("charDigits", function(value,element) {
+    var trimedVal = value.replace(/[\s()+-]|ext\.?/gi, "");
+    if(trimedVal.replace(/[a-zA-Z0-9]/gi, '').length == 0) {
+    return true;
+    }
+    else {
+    return false;
+    }
+    },'Enter a valid phone number');
+    jQuery.validator.addMethod("enterState", function(value,element) {
+    if(!$('#stateInputDiv').hasClass('hidden')){
+    return $.trim(value) != "";
+    }
+    return true;
+    },enterStateMessage);
+    jQuery.validator.addMethod("selectState", function(value,element) {
+    if(!$('#stateDropDownDiv').hasClass('hidden')){
+    return $.trim(value) != "";
+    }
+    return true;
+    },stateMessage);
+    });
+    })(jQuery);
+    </script><script type="text/javascript">
+//<![CDATA[
+    (function ($){
+    $.stubhub.passValidator.init('#password');
+    })(jQuery);
+    //]]>
+    </script><script type="text/javascript">
+//<![CDATA[
+    (function($) {
+    $(function() {
+    if(false){
+    $('input#userAgreement').removeAttr('checked');
+    }
+    initRegister();
+    });
+    })(jQuery);
+    //]]>
+    </script>
+
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,20 @@
+{
+	"name": "devicelogin",
+	"description": "Adding device detection and captcha to login screens",
+	"author": {
+		"name": "Dominic McGinnis",
+		"email": "dominic_mcginnis@yahoo.com"
+	},
+	"private": false,
+	"dependencies": {
+		"express": "3.0.6",
+		"ejs": "0.8.4",
+		"mongodb": "1.2.7",
+		"moment" : "1.7.2",
+		"emailjs": "0.3.3"
+	},
+	"engines": {
+		"node": "0.8.14",
+		"npm":  "1.1.65"
+	}
+}
